@@ -15,7 +15,7 @@ Contributions of other exporters are welcome!
 Here is an image of the PDF produced for the DMRS for "The chef whose
 soup spilled quit":
 
-![DMRS rendering for "The chef whose soup spilled quit."](images/dmrs-tikz-pdf.png)
+![DMRS rendering for "The chef whose soup spilled quit."](https://raw.githubusercontent.com/delph-in/delphin-latex/master/images/dmrs-tikz-pdf.png)
 
 
 # Installation and Requirements
@@ -27,8 +27,8 @@ PyDelphin by default, but otherwise it can be installed via `pip`:
 $ pip install delphin-latex
 ```
 
-It depends on the `delphin.dmrs` and `delphin.predicate` packages,
-both at version `1.0.0`. For rendering, [LaTeX][] and the
+It depends on the `delphin.dmrs` and `delphin.predicate` modules in
+PyDelphin version `1.0.0`. For rendering, [LaTeX][] and the
 [`tikz-dependency`] package are required.
 
 

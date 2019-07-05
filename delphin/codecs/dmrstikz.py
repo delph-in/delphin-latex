@@ -108,9 +108,6 @@ def dumps(ds, properties=True, lnk=True, indent=True):
     """
     Serialize DMRS objects for LaTeX + tikz-dependency
 
-    Note:
-        Requires LaTeX and the `tikz-dependency` package for
-        visualization.
     Args:
         ds: an iterator of DMRS objects to serialize
         properties: (unused)
