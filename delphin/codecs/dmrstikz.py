@@ -106,7 +106,7 @@ def dump(ds, destination, properties=True, lnk=True,
 
 def dumps(ds, properties=True, lnk=True, indent=True):
     """
-    Serialize DMRS objects for LaTeX + tikz-dependency
+    Serialize DMRS objects for LaTeX + tikz-dependency.
 
     Args:
         ds: an iterator of DMRS objects to serialize
@@ -114,7 +114,7 @@ def dumps(ds, properties=True, lnk=True, indent=True):
         lnk: (unused)
         indent (bool, int): (unused)
     Returns:
-        a SimpleMRS string representation of a corpus of MRS objects
+        LaTeX code for rendering the DMRSs in *ds*.
     """
     parts = [HEADER]
     for d in ds:
@@ -124,6 +124,17 @@ def dumps(ds, properties=True, lnk=True, indent=True):
 
 
 def encode(d, properties=True, lnk=True, indent=True):
+    """
+    Serialize a single DMRS object *d* for LaTeX + tikz-dependency.
+
+    Args:
+        d: DMRS object to serialize
+        properties: (unused)
+        lnk: (unused)
+        indent (bool, int): (unused)
+    Returns:
+        LaTeX code for rendering the DMRS *d*.
+    """
     lines = []
     lines.append("\\begin{dependency}[dmrs]")
     ns = d.nodes
