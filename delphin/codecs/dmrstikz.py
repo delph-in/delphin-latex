@@ -145,7 +145,6 @@ def encode(d, properties=True, lnk=True, indent=True):
         pred = _latex_escape(predicate.normalize(n.predicate))
         pred = "\\named{}" if pred == 'named' else pred
         if n.carg is not None:
-            print(n.carg.strip('"'))
             pred += "\\smaller ({})".format(n.carg.strip('"'))
         lines.append("    \\spred{{{}}} {}     % node {}".format(
             pred, sep, i+1))
